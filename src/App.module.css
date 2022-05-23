@@ -1,0 +1,153 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  flex-direction: row;
+  margin: 0px auto;
+  background-color: black;
+}
+.headerAppJokes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.favHeaderNavImg {
+  display: none;
+}
+.modal {
+  display: none;
+}
+.bodyApp {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  min-height: 100vh;
+}
+.title {
+  font-size: 32px;
+}
+.title_desr {
+  font-size: 24px;
+}
+.emptyFav {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(171, 171, 171, 0.5);
+  padding-top: 40px;
+}
+.mainJokes {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 20px 50px;
+}
+.favoriteJokes {
+  width: 40%;
+  background-color: #f5f5f5;
+}
+.humburgerBtn {
+  display: none;
+}
+.appFavoritesTitle {
+  color: rgba(171, 171, 171, 1);
+  font-size: 20px;
+  padding: 0px 40px;
+}
+.favHeaderNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blur {
+  display: none;
+}
+.humburgerBtnWithSmth {
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .favHeaderNavImg {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+  }
+  body {
+    width: 100vw;
+  }
+  .favoriteJokes {
+    display: none;
+  }
+  .bodyApp {
+    margin: 0;
+  }
+  .humburgerBtn {
+    display: block;
+  }
+  .mainJokes {
+    width: 100%;
+  }
+  .modal {
+    display: block;
+  }
+  .blur {
+    width: 100vw;
+    min-height: 100%;
+    right: 100%;
+    top: 0;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    display: block;
+  }
+  .favoriteJokesModal {
+    display: block;
+    width: 60%;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50;
+  }
+  .humburgerBtn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ababab;
+    cursor: pointer;
+  }
+  .humburgerBtnWithSmth {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ababab;
+    position: relative;
+  }
+  .humburgerBtnWithSmth::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .favoriteJokesModal {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-color: #f5f5f5;
+
+    right: 0;
+    top: 0;
+  }
+  .mainJokes {
+    width: 100vh;
+    overflow: auto;
+    padding: 20px;
+  }
+  .jokeCard {
+    width: 100%;
+    margin: 0;
+  }
+}

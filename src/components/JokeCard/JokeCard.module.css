@@ -1,0 +1,79 @@
+.jokeCard {
+  background: #f8f8f8;
+  width: 70%;
+  box-shadow: 0px 4px 6px rgba(200, 200, 200, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+.jokeCardFavoriteImg {
+  text-align: end;
+}
+.jokeCardJoke {
+  display: flex;
+  justify-content: center;
+}
+.jokeCardId,
+.jokeCardLast_Update {
+  font-size: 10px;
+  color: rgba(171, 171, 171, 1);
+}
+.jokeCardId > a {
+  color: #8ea7ff;
+}
+.jokeCardCategoriesNone {
+  width: 100px;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #333333;
+  background-color: #ffff;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.jokeCardCategories {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #333333;
+  background-color: #ffff;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.textImage {
+  padding: 0px 10px;
+}
+.jokeCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jokeCardText {
+  min-width: 90%;
+}
+.jokeCardTextJoke {
+  word-break: break-word;
+}
+.jokeCardCategory {
+  display: block;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+
+.jokeCardCategoryNone {
+  display: none;
+  background-color: #f8f8f8;
+}
+@media screen and (max-width: 600px) {
+  .textImage {
+    display: none;
+  }
+}

@@ -1,0 +1,102 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  font-size: 20px;
+}
+input[type="radio"]:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #ebebeb;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type="radio"]:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.categoriesBtns {
+  padding: 5px;
+  width: 20%;
+  background: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  border-radius: 6px;
+}
+.btnsCategoryBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoriesBtns:hover {
+  background: #f3f3f3;
+}
+.categoriesBtns:focus {
+  border: 2px solid #7291ff;
+  border-radius: 5px;
+  background: #eeeeee;
+}
+.categoriesBtnsNone {
+  display: none;
+}
+.categoriesSearchInput {
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to left top,
+    #7291ff 10%,
+    transparent 40%,
+    transparent 80%,
+    #7291ff 90%
+  );
+  border-image-slice: 1;
+  outline: none;
+}
+.categoriesSearchInput:focus {
+  border: 5px solid #7291ff;
+  border-radius: 5px;
+}
+.categoriesSearchInputNone {
+  display: none;
+}
+
+.getJokeBtn {
+  width: 130px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0px;
+  background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
+}
+@media screen and (max-width: 600px) {
+  .btnsCategoryBox {
+    display: grid;
+
+    grid-template-columns: 50% 1fr;
+  }
+  .categoriesBtns {
+    width: 100%;
+    font-size: 20px;
+  }
+}
